@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body onkeydown="direction(event,0)">
+    <div class="main_body">
+
+
+        <div class="box_container">
+            <div class="box_container_left" id="box_container_left">
+
+            </div>
+
+            <div class="box_container_right" id="box_container_right">
+                <div class="next box_container_right_inside_div" id="next"> Next:-
+                    <div class="next_div"></div>
+                </div>
+                <div class="box_container_right_inside_div"> Score:-
+                    <div id="score">0</div>
+                </div>
+                <div class=" box_container_right_inside_div"> Level :-
+                    <div id="level">0</div>
+                </div>
+                <div class="start_Banner" id="start_Banner"> <button class="btn" id="btn" onclick="startGame()">Start
+                        Game</button></div>
+
+
+            </div>
+
+            <div class="canArea" style="width: 50vw;">
+                <div class="cantrolar">
+                    <div class="leftright">
+                        <button class="left_right_btn bbtn" type="button" onclick="direction(event,37)">-</button>
+                     </div>
+                    <div class="updown">
+                        <button class="up_down_btn bbtn" type="button" onclick="direction(event,38)">/\</button>
+                        <div class="middle_circle"></div>
+                        <button class="up_down_btn bbtn" type="button" onclick="direction(event,40)">\/</button>
+                    </div>
+                    <div class="leftright">
+                        <button class="left_right_btn bbtn" type="button" onclick="direction(event,39)">-></button>
+                     </div>
+                </div>
+              </div>
+
+
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
